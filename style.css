@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: lavenderblush;
+    font-family: Arial, sans-serif;
+
+}
+
+.calculator {
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
+    width: 270px;
+    background-position: 20px ;
+    background-image:  url(https://4kwallpapers.com/images/walls/thumbs_3t/6892.jpg);
+}
+
+#display {
+    width: 8;
+    height: 80px;
+    margin-bottom: 10px;
+    font-size: 21px;
+    text-align: right;
+    text-shadow: #222;
+    padding:2px;
+    color: red;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+button {
+    height: 45px;
+    font-size: 18px;
+    border-style:groove;
+    border-radius: 5px;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: transparent;
+    
+}
+
+button:hover {
+    background-color: black;
+}
+
+.zero {
+    grid-column: span 3;
+}

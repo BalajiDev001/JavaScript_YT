@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>javascript</title>
+    </head>
+    <body>
+        <p id="root">this one is old text</p>
+        <script type="module">
+            import test from "./dude.js"
+            window.test=test;
+        </script>
+        <button type="button" onclick="test()">click me</button>
+    </body>
+</html>
+
+
+<!-- here script module is private(we cant not available global) thats why  we need to use windows.test // to make it global-->
